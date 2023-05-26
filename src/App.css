@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+section{
+  color:#f4f8f8;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
+  background-color: rgb(179, 212, 253);
+  height: 100vh;
+}
+
+.navBg {
+  background-color: rgb(12, 12, 71);
+  
+}
