@@ -1,4 +1,4 @@
-# Weather Project
+# APPCLIMA Project
 
 Simple Weather Project in reactJS
 
@@ -6,4 +6,4 @@ This project uses weatherapi.com's API, so you need an API key for it from [weat
 
 You need to update the `API_KEY` in `src/API.js` file before running the app
 
-![screen-capture](https://user-images.githubusercontent.com/78949167/157822710-0c75e911-690c-4a72-bbc2-79e31cf63c35.gif)
+![screen-capture](https://appclima-flame.vercel.app/)
