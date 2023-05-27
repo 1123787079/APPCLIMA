@@ -20,7 +20,7 @@ export default class WeatherCard extends React.Component {
                         this.state.wdata.current.is_day === 0 ?
                             {
                                 background: "rgb(2,0,36)",
-                                background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 13%, rgba(5,5,89,1) 27%, rgba(3,3,75,1) 38%, rgba(1,1,54,1) 50%, rgba(0,0,46,1) 65%, rgba(0,0,42,1) 81% )",
+                                //background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 13%, rgba(5,5,89,1) 27%, rgba(3,3,75,1) 38%, rgba(1,1,54,1) 50%, rgba(0,0,46,1) 65%, rgba(0,0,42,1) 81% )",
                                 color: "#fff"
                             }
                             :
