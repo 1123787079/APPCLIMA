@@ -11,6 +11,7 @@ import Home from './Componentes/home';
 import NavBarEj from './Componentes/NavBar';
 
 
+
 function App() {
   return (
     <div className="App">
@@ -24,9 +25,12 @@ function App() {
         </Route>
       </Routes>
       </BrowserRouter>
-     
+
     </div>
-  );
+
+);
 }
+
+
 
 export default App;
