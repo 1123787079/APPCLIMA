@@ -1,41 +1,41 @@
 {
     "location": {
-        "name": "La Plata",
+        "name": "Balvanera",
         "region": "Buenos Aires",
         "country": "Argentina",
-        "lat": -34.87,
-        "lon": -58.06,
+        "lat": -34.61,
+        "lon": -58.4,
         "tz_id": "America/Argentina/Buenos_Aires",
-        "localtime_epoch": 1685196611,
-        "localtime": "2023-05-27 11:10"
+        "localtime_epoch": 1685291351,
+        "localtime": "2023-05-28 13:29"
     },
     "current": {
-        "last_updated_epoch": 1685196000,
-        "last_updated": "2023-05-27 11:00",
+        "last_updated_epoch": 1685290500,
+        "last_updated": "2023-05-28 13:15",
         "temp_c": 12.0,
         "temp_f": 53.6,
         "is_day": 1,
         "condition": {
-            "text": "Sunny",
-            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
-            "code": 1000
+            "text": "Partly cloudy",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+            "code": 1003
         },
-        "wind_mph": 11.9,
-        "wind_kph": 19.1,
-        "wind_degree": 220,
-        "wind_dir": "SW",
-        "pressure_mb": 1025.0,
-        "pressure_in": 30.27,
+        "wind_mph": 4.3,
+        "wind_kph": 6.8,
+        "wind_degree": 30,
+        "wind_dir": "NNE",
+        "pressure_mb": 1029.0,
+        "pressure_in": 30.39,
         "precip_mm": 0.0,
         "precip_in": 0.0,
         "humidity": 54,
-        "cloud": 0,
-        "feelslike_c": 9.5,
-        "feelslike_f": 49.1,
+        "cloud": 25,
+        "feelslike_c": 12.5,
+        "feelslike_f": 54.4,
         "vis_km": 10.0,
         "vis_miles": 6.0,
         "uv": 4.0,
-        "gust_mph": 17.7,
-        "gust_kph": 28.4
+        "gust_mph": 2.7,
+        "gust_kph": 4.3
     }
 }
