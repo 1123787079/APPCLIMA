@@ -6,4 +6,4 @@ This project uses weatherapi.com's API, so you need an API key for it from [weat
 
 You need to update the `API_KEY` in `src/API.js` file before running the app
 
-https://appclima-flame.vercel.app/
+https://clima-dxm6.vercel.app/
