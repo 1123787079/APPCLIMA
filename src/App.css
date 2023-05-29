@@ -1,3 +1,59 @@
+.imagen {
+  width: 150px;
+  height: 150px;
+}
+
+.imagen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.caja {
+  margin-bottom: 20px;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 10px;
+}
+
+.redes-sociales a {
+  color: #000;
+}
+
+.redes-sociales a:hover {
+  color: #007bff;
+}
+
+.icono-linkedin,
+.icono-instagram {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.icono-linkedin,
+.icono-instagram {
+  margin-top: 5px;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+
 .App {
   text-align: center;
 }
