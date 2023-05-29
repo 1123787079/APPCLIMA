@@ -1,136 +1,95 @@
-import axios from "axios";
 import React from "react";
-import { config } from "./API"
-import "./App.css";
-import WeatherCard from "./Card";
-import LinkBack from "./LinkBack";
-import Loading from "./Loading";
+import './App.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import BeatrizImg from "./Beatriz.jpg";
+import YsabelImg from "./Ysabel.jpg";
+import NormaryImg from "./Normary.jpg";
+import RossysmarImg from "./Rossysmar.jpg";
+import FleridaImg from "./Flerida.jpg";
+import ErikaImg from "./Erika.jpg";
 
-export default class App extends React.Component {
-    constructor(props) {
-        super()
-        this.state = {
-            loading: false,
-            location: "",
-            inputWarning: false,
-            wdata: {}
-        }
-    }
+function Caja() {
+  const personas = [
+    {
+      nombre: "Beatriz Caceres",
+      imagen: BeatrizImg,
+      linkedin: "https://www.linkedin.com/in/bcacereso/",
+      instagram: "https://www.instagram.com/beacacereso/",
+    },
+    {
+      nombre: "Ysabel Quiñones",
+      imagen: YsabelImg,
+      linkedin: "https://www.linkedin.com/in/ysabel-quinones-a93296173/",
+      instagram: "https://www.instagram.com/ysabelquinones/",
+    },
+    {
+      nombre: "Normary Ramirez",
+      imagen: NormaryImg,
+      linkedin: "https://www.linkedin.com/in/ramireznormary",
+      instagram: "https://instagram.com/vikwilmary?igshid=MzNlNGNkZWQ4Mg==",
+    },
+    {
+      nombre: "Rossysmar Martinez",
+      imagen: RossysmarImg,
+      linkedin: "https://www.linkedin.com/in/rossysmar-martinez",
+      instagram: "https://www.instagram.com/rossysmartinez22/",
+    },
+    {
+      nombre: "Flerida Salas",
+      imagen: FleridaImg,
+      linkedin: "https://www.linkedin.com/in/flerida-salas-570766220/",
+      instagram: "https://www.instagram.com/flerida146/",
+    },
+    {
+      nombre: "Erika Gomez",
+      imagen: ErikaImg,
+      linkedin: "https://www.linkedin.com/home?original_referer=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F",
+      instagram: "https://www.instagram.com/erikatgo/",
+    },
+  ];
 
-    GetData = () => {
-        // settings input warning to false
-        this.setState({
-            inputWarning: false
-        })
-
-        // if location is not available
-        if (!this.state.location) {
-            this.setState({
-                inputWarning: "Enter location to continue",
-            })
-            return;
-        }
-
-        // setting loading to true and weather data to {}
-        this.setState({
-            wdata : {},
-            loading: true,
-        })
-
-        // sending GET request
-        axios.get(
-            `https://api.weatherapi.com/v1/current.json?key=${config.API_KEY}&q=${this.state.location}`
-        ).then(resp => {
-            return resp.data
-        })
-            .then(response => {
-                // if any error in request
-                if (response.error) {
-                    this.setState({
-                        inputWarning: response.error.message,
-                        loading: false,
-                        wdata: {}
-                    })
-                    return;
-                }
-                // set the response to state
-                this.setState({
-                    loading: false,
-                    wdata: response
-                })
-
-            })
-            .catch(err => {
-                if (err.response && err.response.status === 400 && err.response.data)
-                    this.setState({
-                        inputWarning: err.response.data.error.message,
-                        loading: false
-                    })
-            })
-    }
-
-    FormData = e => {
-        e.preventDefault();
-        this.GetData();
-    }
-
-    render() {
-        return (
-            <div id="App">
-                <div id="main">
-                    <form onSubmit={this.FormData}>
-                        <input type="search" defaultValue={this.state.location} onChange={e => this.setState({ location: e.target.value })} placeholder="Enter Location" style={
-                            this.state.inputWarning ?
-                                {
-                                    "border": "3px solid #a00"
-                                }
-                                :
-                                {}
-                        }
-                        />
-                        
-                    </form>
-                    {
-                        this.state.inputWarning ?
-                            <div style={{
-                                padding: "5px 1px",
-                                "color": "#a00",
-                                fontSize: "17px",
-                                fontWeight: 700,
-                            }}>
-                                {this.state.inputWarning}
-                            </div>
-                            :
-                            []
-                    }
-                    {
-                        this.state.loading ?
-                            <Loading />
-                            :
-                            []
-                    }
-                    {
-                        this.state.wdata && this.state.wdata.location && this.state.wdata.current ?
-                            <WeatherCard response={this.state.wdata} />
-                            :
-                            []
-                    }
-                </div>
-                <LinkBack />
-            </div>
-        )
-    }
-
-    componentDidMount() {
-        // Getting GeoLocation of user,
-        if ('geolocation' in navigator) {
-            navigator.geolocation.getCurrentPosition(pos => {
-                console.log("ok")
-                this.setState({
-                    location: `${pos.coords.latitude},${pos.coords.longitude}`
-                }, this.GetData)
-
-            })
-        }
-    }
+  return (
+    <div className="container">
+      {personas.map((persona, index) => (
+        <div className="caja" key={index}>
+          <div className="imagen-container">
+            <img className="imagen" src={persona.imagen} alt={persona.nombre} />
+          </div>
+          <h2>{persona.nombre}</h2>
+          <div className="redes-sociales">
+            <a href={persona.linkedin}>
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href={persona.instagram}>
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }
+
+export default Caja;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
