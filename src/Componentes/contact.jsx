@@ -13,20 +13,22 @@ export const Mailer = () => {
 
   return (
     <div className='div-form'>
-      <h1 className='title-form'>Formulario de Contacto</h1>
+      <h1 className='title-form'>Tú Opinión nos interesa</h1>
       <form className='form-mail' onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name='user_name' />
+        <label>Nombre</label>
+        <br></br><input type="text" name='user_name' />
+        <hr />
+        <label>Apellido</label>
+        <br></br><input type="text" name='user_name' />
+        <hr />
+        <label>E-mail</label>
+        <br></br><input type="email" name='user_email' />
         <hr />
 
-        <label>Email</label>
-        <input type="email" name='user_email' />
-        <hr />
-
-        <label>Message</label>
+        <label>Mensaje</label>
         <textarea name="user_message" id="" cols="30" rows="10"></textarea>
         <hr />
-        <button>Send</button>
+        <button>Enviar</button>
       </form>
     </div>
   )

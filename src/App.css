@@ -2,10 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -38,13 +35,13 @@
 }
 
 section{
-  color:#030857;
+  color:#1f29b7;
   text-shadow: 3px 3px rgba(48, 206, 220, 0.5);
   background-color: rgb(138, 210, 246);
   height: 100vh;
 }
 
 .navBg {
-  background-color: rgb(12, 12, 71);
+  background-color: rgb(42, 42, 183);
   
 }
