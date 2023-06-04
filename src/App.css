@@ -1,69 +1,296 @@
-body {
 
-  background-image: url(https://media.istockphoto.com/id/531889697/es/foto/concepto-de-previsi%C3%B3n-meteorol%C3%B3gica.jpg?s=612x612&w=0&k=20&c=1s_76PnVnyc155ghSh-n6M0be5MfnFG367v6dozO0_I=);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed, scroll;
-  background-size: cover;
-  padding: 50px;
-  background-color: rgb(180, 247, 225);
-  }
-  
-.App {
-  text-align: center;
-}
+.imagen {
+  width: 150px;
+  height: 150px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+} /* estas son las fotos*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.imagen-container {
 
-.App-header {
-  background-color: #090d11e9;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgba(252, 250, 250, 0.971);
+
+  align-items: center;
+
+  width: 150px;
+
+  height: 150px;
+
+  margin-right: 10px;
+
+  border: 2px solid black; /* Agrega un borde de 2px de ancho y color negro */
+
+  border-radius: 5px; /* Agrega esquinas redondeadas */
+
+}/* este es el contenedor principal*/
+
+.caja {
+
+  margin-bottom: 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+.redes-sociales {
+
+  display: flex;
+
+  gap: 10px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.redes-sociales a {
+
+  color: #000;
+
 }
+
+section{
+  color:#1f29b7;
+  text-shadow: 3px 3px rgba(48, 206, 220, 0.5);
+  background-color: rgb(138, 210, 246);
+  height: 100vh;
+}
+
+.navBg {
+  background-color: rgb(42, 42, 183);
+} 
+
+.redes-sociales a:hover {
+
+  color: #007bff;
+
+
+}
+
+.icono-linkedin,
+
+.icono-instagram {
+
+  margin-top: 5px;
+
+  margin-right: 10px;
+
+}
+
+
+.icono-linkedin,
+
+.icono-instagram {
+
+  margin-top: 5px;
+
+}
+
+
+.container {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-gap: 20px;
+
+}
+
+
+.App {
+
+  * {
+
+    font-family: Arial, Helvetica, sans-serif !important;
+
+  }
+
+}
+
+
+
+
+
+#App {
+
+  text-align: center;
+
+  padding: 20px;
+
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+
+
+.form {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+  width: 100%;
+
+
+}
+
+
+
+
+input {
+
+  font-size: 18px;
+
+  padding: 15px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-weight: 700;
+
+  background-color: #fff;
+
+  border: 2px solid #000;
+
+}
+
+
+
 
 button {
-  padding: 0 16px;
-  border-radius: 2px;
-  background-color: #071414;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  color: #fff;
-  transition: background-color 15ms linear,
-    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  height: 36px;
-  line-height: 2.25rem;
-  font-family: Roboto, sans-serif;
-  font-size: 0.875rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-size: 20px;
+
+  background-color: #fff;
+
+  border: 2px solid #000;
+
 }
+
+
+
+
+.card * {
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+
+}
+
+
+
+
+.card {
+
+  margin: 10px;
+
+  border: 0px;
+
+  box-shadow: 0px 2px 4px 0px #000;
+
+  border-radius: 5px;
+
+  font-weight: 500;
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-around;
+
+  padding: 30px;
+
+  width: 450px;
+
+  max-width: calc(100vw - 20px - 60px - 10px);
+
+}
+
+
+
+
+.card > .location {
+
+  max-width: 50%;
+
+}
+
+
+
+
+.card > .location > .city {
+
+  font-size: 30px;
+
+}
+
+
+
+
+.card > .location * {
+
+  margin: 6px;
+
+}
+
+
+
+.card > .location > .flex > .region {
+
+  font-size: 20px;
+
+}
+
+
+
+
+.card > .location > .flex > .country {
+
+  font-size: 25px;
+
+}
+
+
+.card > .location > .timed {
+
+  font-size: 13px;
+
+  font-weight: 900;
+
+}
+
+.card > .info > .condition > .status {
+
+  font-size: 20px;
+
+  margin-bottom: 10px;
+
+}
+
+
+
+
+@media (max-width: 500px) {
+
+  .card {
+
+    flex-direction: column-reverse;
+
+    margin: 10px auto;
+
+    align-items: center;
+
+  }
+
+}
+
