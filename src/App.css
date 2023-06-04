@@ -1,3 +1,4 @@
+
 .imagen {
   width: 150px;
   height: 150px;
@@ -63,6 +64,7 @@ section{
 
   color: #007bff;
 
+
 }
 
 .icono-linkedin,
@@ -109,11 +111,13 @@ section{
 
 
 
+
 #App {
 
   text-align: center;
 
   padding: 20px;
+
 
   display: flex;
 
@@ -136,7 +140,9 @@ section{
 
   justify-content: center;
 
+
   width: 100%;
+
 
 }
 
@@ -255,8 +261,6 @@ button {
 }
 
 
-
-
 .card > .location > .timed {
 
   font-size: 13px;
@@ -289,3 +293,4 @@ button {
   }
 
 }
+
