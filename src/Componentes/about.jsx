@@ -1,16 +1,17 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import BeatrizImg from "/Users/normaryramirez/Desktop/appclima/src/Beatriz.jpg";
-import YsabelImg from "/Users/normaryramirez/Desktop/appclima/src/Ysabel.jpg";
-import NormaryImg from "/Users/normaryramirez/Desktop/appclima/src/Normary.jpg";
-import RossysmarImg from "/Users/normaryramirez/Desktop/appclima/src/Rossysmar.jpg";
-import FleridaImg from "/Users/normaryramirez/Desktop/appclima/src/Flerida.jpg";
-import ErikaImg from "/Users/normaryramirez/Desktop/appclima/src/Erika.jpg";
+import BeatrizImg from "C:\\Users\\54113\\OneDrive\\Desktop\\Proyectos React\\appclima\\src\\Beatriz.jpg";
+import YsabelImg from "C:\\Users\\54113\\OneDrive\\Desktop\\Proyectos React\\appclima\\src\\Ysabel.jpg";
+import NormaryImg from "C:\\Users\\54113\\OneDrive\\Desktop\\Proyectos React\\appclima\\src\\Normary.jpg";
+import RossysmarImg from "C:\\Users\\54113\\OneDrive\\Desktop\\Proyectos React\\appclima\\src\\Rossysmar.jpg";
+import FleridaImg from "C:\\Users\\54113\\OneDrive\\Desktop\\Proyectos React\\appclima\\src\\Flerida.jpg";
+import ErikaImg from "C:\\Users\\54113\\OneDrive\\Desktop\\Proyectos React\\appclima\\src\\Erika.jpg";
 
-function Caja() {
+function Caja() 
+  {
     const personas = [
-    
+    {
         nombre: "Beatriz Caceres",
         imagen: BeatrizImg,
         linkedin: "https://www.linkedin.com/in/bcacereso/",
