@@ -51,29 +51,51 @@ function Caja() {
   ];
 
   return (
+
     <div className="container">
+
       {personas.map((persona, index) => (
+
         <div className="caja" key={index}>
+
           <div className="imagen-container">
+
             <img className="imagen" src={persona.imagen} alt={persona.nombre} />
+
           </div>
+
           <h2>{persona.nombre}</h2>
+
           <div className="redes-sociales">
-            <a href={persona.linkedin}>
+
+            <a href={persona.linkedin} target="_blank" rel="noopener noreferrer">
+
               <FontAwesomeIcon icon={faLinkedin} />
+
             </a>
-            <a href={persona.instagram}>
+
+            <a href={persona.instagram} target="_blank" rel="noopener noreferrer">
+
               <FontAwesomeIcon icon={faInstagram} />
+
             </a>
+
           </div>
+
         </div>
+
       ))}
+
     </div>
+
   );
+
 }
 
-export default Caja;
 
+
+
+export default Caja;
 // hasta aca Bea
 
 
