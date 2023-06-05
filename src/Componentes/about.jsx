@@ -1,12 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import BeatrizImg from "..\\src\\Beatriz.jpg";
-import YsabelImg from "..\\src\\Ysabel.jpg";
-import NormaryImg from "..\\src\\Normary.jpg";
-import RossysmarImg from "..\\src\\Rossysmar.jpg";
-import FleridaImg from "..\\src\\Flerida.jpg";
-import ErikaImg from "..\\src\\Erika.jpg";
+import BeatrizImg from "../src/Beatriz.jpg";
+import YsabelImg from "../src/Ysabel.jpg";
+import NormaryImg from "../src/Normary.jpg";
+import RossysmarImg from "../src/Rossysmar.jpg";
+import FleridaImg from "../src/Flerida.jpg";
+import ErikaImg from "../src/Erika.jpg";
 
 function Caja() 
   {
