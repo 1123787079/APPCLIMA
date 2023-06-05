@@ -10,11 +10,11 @@
 
 import axios from "axios";
 import React from "react";
-import { config } from "..\\src\\API.js"
-import "..\\src\\Card.css";
-import WeatherCard from "..\\src\\Card";
-import LinkBack from "..\\src\\LinkBack";
-import Loading from "..\\src\\Loading";
+import { config } from "./API.js"
+import "./Card.css";
+import WeatherCard from "./Card.jsx";
+import LinkBack from "./LinkBack.jsx";
+import Loading from "./Loading.jsx";
 
 export default class App extends React.Component {
     constructor(props) {

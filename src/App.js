@@ -6,10 +6,10 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 //importamos los campos creados
 
-import Caja from './Componentes/about';
-import Contacto from './Componentes/contact';
-import Home from './Componentes/home';
-import NavBarEj from './Componentes/NavBar';
+import Caja from './about';
+import Contacto from './contact';
+import Home from './home';
+import NavBarEj from './NavBar';
 
 function App() {
   return (
