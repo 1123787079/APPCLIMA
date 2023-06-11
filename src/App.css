@@ -1,9 +1,16 @@
-
 .imagen {
+
   width: 150px;
+
   height: 150px;
 
-} /* estas son las fotos*/
+
+}
+
+/* estas son las fotos*/
+
+
+
 
 .imagen-container {
 
@@ -13,98 +20,201 @@
 
   align-items: center;
 
-  width: 150px;
+  width: 120px;
+  /* Reduce el ancho de la imagen */
 
-  height: 150px;
+  height: 120px;
+  /* Reduce la altura de la imagen */
 
   margin-right: 10px;
+  /* Reduce el margen derecho */
 
-  border: 2px solid black; /* Agrega un borde de 2px de ancho y color negro */
+  border: 2px solid black;
 
-  border-radius: 5px; /* Agrega esquinas redondeadas */
+  border-radius: 5px;
 
-}/* este es el contenedor principal*/
+}
+
+/* este es el contenedor principal*/
+
+
+
 
 .caja {
 
+
+
+
   margin-bottom: 10px;
 
+
+
+
 }
+
+
+
 
 
 
 
 .redes-sociales {
 
+
+
+
   display: flex;
+
+
+
 
   gap: 10px;
 
+
+
+
 }
+
+
+
 
 
 .redes-sociales a {
 
+
+
+
   color: #000;
 
+
+
+
 }
 
-section{
-  color:#1f29b7;
+
+
+
+section {
+
+  color: #1f29b7;
+
   text-shadow: 3px 3px rgba(48, 206, 220, 0.5);
+
   background-color: rgb(138, 210, 246);
+
   height: 100vh;
+
 }
+
+
+
 
 .navBg {
+
   background-color: rgb(42, 42, 183);
-} 
+
+}
+
+
+
 
 .redes-sociales a:hover {
+
+
+
 
   color: #007bff;
 
 
+
+
+
 }
+
+
+
 
 .icono-linkedin,
 
+
+
+
 .icono-instagram {
 
+
+
+
   margin-top: 5px;
+
+
+
 
   margin-right: 10px;
 
+
+
+
 }
+
+
+
 
 
 .icono-linkedin,
 
+
+
+
 .icono-instagram {
+
+
+
 
   margin-top: 5px;
 
+
+
+
 }
+
+
+
 
 
 .container {
 
+
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat( 1fr);
 
   grid-gap: 20px;
 
 }
 
 
+
+
+
 .App {
+
+
+
 
   * {
 
+
+
+
     font-family: Arial, Helvetica, sans-serif !important;
 
+
+
+
   }
+
+
+
 
 }
 
@@ -114,76 +224,111 @@ section{
 
 #App {
 
+
+
+
   text-align: center;
+
+
+
 
   padding: 20px;
 
 
+
+
+
   display: flex;
+
+
+
 
   flex-direction: column;
 
+
+
+
   justify-content: center;
+
+
+
 
   align-items: center;
 
+
+
+
 }
+
+@media (max-width: 499px) { 
+.form{
+  flex-direction: column;
+}
+.input{
+  margin-bottom: 10px;
+} 
+button{ align-self: center}
+};
+  
+
 
 
 
 
 .form {
-
   display: flex;
-
+  flex-direction: row;
   align-items: center;
-
   justify-content: center;
-
-
   width: 100%;
-
-
 }
 
 
 
 
-input {
 
+
+
+
+.input {
+  flex: 1;
   font-size: 18px;
-
   padding: 15px;
-
   font-family: Arial, Helvetica, sans-serif;
-
   font-weight: 700;
-
   background-color: #fff;
-
   border: 2px solid #000;
-
+  margin-right: 10px;
 }
+
+
+
 
 
 
 
 button {
-
   font-size: 20px;
-
   background-color: #fff;
-
   border: 2px solid #000;
-
+  padding: 10px 20px;
 }
+
+
+
 
 
 
 
 .card * {
 
+
+
+
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+
+
+
 
 }
 
@@ -210,87 +355,211 @@ button {
 
   padding: 30px;
 
-  width: 450px;
-
-  max-width: calc(100vw - 20px - 60px - 10px);
+  max-width: 90%;
+  /* Establece el ancho máximo en un porcentaje */
 
 }
 
 
 
 
-.card > .location {
+.card>.location {
+
+
+
 
   max-width: 50%;
 
+
+
+
 }
 
 
 
 
-.card > .location > .city {
+
+.card>.location>.city {
+
+
+
 
   font-size: 30px;
 
+
+
+
 }
 
 
 
 
-.card > .location * {
+
+
+
+.card>.location * {
+
+
+
+
 
   margin: 6px;
 
+
+
+
 }
 
 
 
-.card > .location > .flex > .region {
+
+
+
+.card>.location>.flex>.region {
+
+
+
 
   font-size: 20px;
 
+
+
+
 }
 
 
 
 
-.card > .location > .flex > .country {
+
+
+
+.card>.location>.flex>.country {
+
+
+
 
   font-size: 25px;
 
+
+
+
 }
 
 
-.card > .location > .timed {
+
+
+
+.card>.location>.timed {
+
+
+
 
   font-size: 13px;
 
+
+
+
   font-weight: 900;
+
+
+
 
 }
 
-.card > .info > .condition > .status {
+
+
+
+.card>.info>.condition>.status {
+
+
+
 
   font-size: 20px;
 
+
+
+
   margin-bottom: 10px;
 
+
+
+
 }
+
+
+
 
 
 
 
 @media (max-width: 500px) {
 
+
+
+
   .card {
+
+
+
 
     flex-direction: column-reverse;
 
+
+
+
     margin: 10px auto;
+
+
+
 
     align-items: center;
 
+
+
+
   }
 
-}
+  @media (max-width: 500px) {
 
+    .container {
+
+      grid-template-columns: 1fr;
+      /* Cambia el diseño de la cuadrícula a una sola columna */
+
+    }
+
+
+
+    .card {
+
+      flex-direction: column-reverse;
+
+      margin: 10px auto;
+
+      align-items: center;
+
+      max-width: 90%;
+      /* Establece el ancho máximo en un porcentaje */
+
+    }
+
+
+
+    .imagen-container {
+
+      width: 100px;
+      /* Reduce el ancho de la imagen */
+
+      height: 100px;
+      /* Reduce la altura de la imagen */
+
+      margin-right: 0;
+      /* Elimina el margen derecho */
+
+    }
+
+  }
+
+
+
+}
